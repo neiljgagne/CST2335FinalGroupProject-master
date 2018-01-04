@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joe.cst2335finalgroupproject.n_NutritionTrackerActivity">
+
+    <TextView
+        android:id="@+id/nutrition_name_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/n_FoodNameOrDesc" />
+
+    <EditText
+        android:id="@+id/nutrition_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_name_header" />
+
+    <TextView
+        android:id="@+id/nutrition_calories_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_name_field"
+        android:text="@string/n_Calories" />
+
+    <EditText
+        android:id="@+id/nutrition_calories_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_calories_header"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/nutrition_carbs_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_calories_field"
+        android:text="@string/n_Carbs" />
+
+    <EditText
+        android:id="@+id/nutrition_carbs_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_carbs_header"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/nutrition_fat_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_carbs_field"
+        android:text="@string/n_Fat" />
+
+    <EditText
+        android:id="@+id/nutrition_fat_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_fat_header"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/nutrition_comment_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_fat_field"
+        android:text="@string/n_Comments" />
+
+    <EditText
+        android:id="@+id/nutrition_comment_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_comment_header" />
+
+    <Button
+        android:id="@+id/nutrition_log_new_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_comment_field"
+        android:text="@string/n_LogFood" />
+
+    <Button
+        android:id="@+id/nutrition_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_log_new_button"
+        android:text="@string/n_Cancel" />
+
+</RelativeLayout>

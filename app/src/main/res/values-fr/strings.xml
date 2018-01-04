@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //app-wide strings
+    <string name="m_app_name">CST2335 Projet final</string>
+    <string name="m_toolbar_guide">Guide de la barre d\'outils:</string>
+
+    <string name="m_menu_exercise">Suivi d\'activité</string>
+    <string name="m_menu_food">Suivi de la nutrition</string>
+    <string name="m_menu_thermostat">Thermostat de maison</string>
+    <string name="m_menu_automobile">Voiture</string>
+
+    //launcher activity strings
+    <string name="m_activityTrackerButtonText">Lancer l\'activité Tracker</string>
+    <string name="m_activityTrackerDescriptionText">Entrez et suivez vos entraînements, y compris la durée.</string>
+
+    <string name="m_nutritionTrackerButtonText">Lancer le suivi de la nutrition</string>
+    <string name="m_nutritionTrackerDescriptionText">Suivez votre consommation de nourriture et analysez sa valeur nutritionnelle.</string>
+
+    <string name="m_thermostatProgramButtonText">Lancer le programmateur de thermostat</string>
+    <string name="m_thermostatProgramDescriptionText">Créez des règles pour gérer le calendrier du thermostat de votre maison.</string>
+
+    <string name="m_carTrackerButtonText">Lancer le carburant de voiture Tracker</string>
+    <string name="m_carTrackerDescriptionText">Enregistrez les achats d\'essence et consultez les informations récapitulatives et les tendances.</string>
+
+    //car activity strings
+
+    <string name="c_CarTrackerActivity">Activité de suivi de voiture</string>
+    <string name="c_LblLoading">Chargement</string>
+    <string name="c_changesSaved">Changements sauvegardés avec succès</string>
+    <string name="c_detailsAdded">Entrée ajoutée avec succès</string>
+
+
+    <string name="c_Ok">D\'accord</string>
+    <string name="c_Cancel">Annuler</string>
+
+    <string name="c_Yes">Oui</string>
+    <string name="c_No">Non</string>
+
+    <string name="c_BtnAddPurchase">Ajouter une entrée</string>
+    <string name="c_BtnAdd">Ajouter</string>
+
+    <string name="c_BtnViewFuelStats">Afficher les statistiques d\'achat de carburant</string>
+    <string name="c_LblPrice">Prix ($/L)</string>
+    <string name="c_LblLitres">Liters (L)</string>
+    <string name="c_LblKilometers">Distance (km)</string>
+    <string name="c_LblDate">Date (jj/mm/aaaa)</string>
+
+    <string name="c_LblPriceHeading">Prix\n($/L)</string>
+    <string name="c_LblLitresHeading">Liters\n(L)</string>
+    <string name="c_LblKilometersHeading">Distance\n(km)</string>
+    <string name="c_LblDateHeading">Date\n(jj/mm/aaaa)</string>
+
+    <string name="c_AlertFillFieldsAdd">Veuillez remplir tous les champs avant d\'ajouter une entrée</string>
+    <string name="c_AlertFillFieldsEdit">Veuillez remplir tous les champs avant d\'enregistrer une entrée</string>
+
+    <string name="c_AddDetailsTitle">Ajouter des détails sur le carburant</string>
+    <string name="c_BtnAddDetails">Ajouter</string>
+
+    <string name="c_EditDetailsTitle">Modifier les détails du carburant</string>
+    <string name="c_BtnSaveDetails">Sauvegarder</string>
+
+    <string name="c_DeleteDetailsTitle">Supprimer les détails du carburant</string>
+    <string name="c_AlertDeleteDetailsMsg">Êtes-vous sûr de vouloir supprimer cette entrée?</string>
+    <string name="c_DeleteSuccessful">Entrée supprimée avec succès</string>
+
+
+    <string name="c_lastMonthStats">Statistiques du mois dernier</string>
+    <string name="c_PriceLastMonth">Prix ​​moyen du gaz:</string>
+    <string name="c_PurchasedLastMonth">Gaz total acheté:</string>
+    <string name="c_avgGasPurchHist">Historique d\'achat de gaz</string>
+    <string name="c_avgGasPurchHistNone">Vous n\'avez actuellement aucun historique d\'achat de gaz</string>
+
+
+    <string-array name="c_months">
+        <item>Janvier</item>
+        <item>Février</item>
+        <item>Mars</item>
+        <item>Avril</item>
+        <item>May</item>
+        <item>Juin</item>
+        <item>Juillet</item>
+        <item>Août</item>
+        <item>Septembre</item>
+        <item>Octobre</item>
+        <item>Novembre</item>
+        <item>Décembre</item>
+    </string-array>
+
+    <string name="c_home">Maison</string>
+    <string name="c_help">Aidez-moi</string>
+    <string name="c_done">Terminé</string>
+    <string name="c_helpMenu">
+        \t<b>Auteur:</b>\tNathan Doef\n
+        \t<b>Numéro de version de l\'activité:</b>\t3\n
+        \t<b>Langues supportées:</b>\tAnglais\tFrançais\n\n
+        \t<b>Instructions:</b>\n
+        \t\u2022 Modifier une entrée en appuyant sur une ligne\n
+        \t\u2022 Supprimer une entrée en appuyant sur l\'icône rouge\n\t\tminus\n
+        \t\u2022 Ajouter une entrée en appuyant sur le bouton\n\t\t «Ajouter une entrée»\n
+        \t\u2022 Appuyez sur le bouton «Afficher les statistiques d'achat de carburant»\n\t tpour afficher les statistiques sur les carburants passés\n
+        \t\u2022 Rentrez chez vous en appuyant sur le bouton «Accueil»
+    </string>
+    <string name="t_addButtonText">Ajouter une nouvelle règle à la liste</string>
+    <string name="t_ruleText">test</string>
+    <string name="t_helpMenuTitleText">Menu d\'aide du gestionnaire du thermostat</string>
+    <string name="t_helpMenuText">
+        \t<b>Auteur:</b>\tJoe Ireland\n
+        \t<b>Numéro de version de l\'activité:</b>\t2\n
+        \t<b>Langues supportées:</b>\tAnglais\tFrançais\n\n
+        \t<b>Instructions:</b>\n
+        \t\u2022 Modifier Règle:\t Tap the rule in the list.\n
+        \t\u2022 Supprimer Règle:\t Tap the red \'minus\' button\n\t\tto the left of the rule.\n
+        \t\u2022 Ajouter Règle:\t Tap \'Add Rule\' button\n
+        \t\u2022 Rentrez chez vous en appuyant sur le bouton «Accueil»
+    </string>
+    <string name="t_helpDoneButtonText">terminé</string>
+    <string name="t_frameLayoutPlaceholderText">Les détails de la règle seront affichés ici.\n\n
+                                                Cliquez sur Ajouter ou sélectionnez une ligne dans la liste sur la gauche.</string>
+    <string name="t_dayLabel">Sur:</string>
+    <string name="t_timeLabel">À:</string>
+    <string name="t_separatorLabel">:</string>
+    <string name="t_setTempLabel">Réglez la température sur</string>
+    <string name="t_degreesLabel">°C</string>
+    <string name="t_manualEntryLabelText">Ou tapez la règle manuellement:</string>
+    <string name="t_manualEntryHintText">Lundi 6:00 Temp -> 20</string>
+    <string name="t_manualEntryFormatLabelText">Suivez le format: lundi 6:00 Temp -> 20</string>
+    <string name="t_saveEditChangesButtonText">Sauvegarder</string>
+    <string name="t_discardEditChangesButtonText">Jeter</string>
+    <string name="t_saveNewRuleEditChangesButtonText">Enregistrer comme nouveau</string>
+    <string name="t_saveAddRuleButtonText">Sauvegarder</string>
+    <string name="t_discardAddRuleButtonText">Jeter</string>
+
+    <string name="n_NoFood">"Aucun aliment n'a été enregistré aujourd'hui."</string>
+    <string name="n_StatsTitle">"Statistiques quotidiennes sur la nutrition"</string>
+
+</resources>

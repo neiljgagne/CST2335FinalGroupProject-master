@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="c_headingBlue">#607d8b</color>
+    <color name="c_rowBlue">#cfd8dc</color>
+    <color name="c_rowWhite">#ECEFF1</color>
+    <color name="c_btnGrey">#BDBDBD</color>
+    <color name="c_toolbarGrey">#e0e0e0</color>
+</resources>

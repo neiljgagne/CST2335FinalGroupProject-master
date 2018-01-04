@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_rowWhite">
+
+
+    <TextView
+        android:id="@+id/day_label"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/t_dayLabel"
+        android:textAlignment="viewStart"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/day_spinner"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/day_label"
+        app:layout_constraintStart_toEndOf="@+id/day_label"
+        app:layout_constraintTop_toTopOf="@+id/day_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/time_label"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/t_timeLabel"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_label" />
+
+    <Spinner
+        android:id="@+id/hour_spinner"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@+id/time_label"
+        app:layout_constraintTop_toTopOf="@+id/time_label" />
+
+    <TextView
+        android:id="@+id/separator_label1"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/t_separatorLabel"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/hour_spinner"
+        app:layout_constraintTop_toTopOf="@+id/hour_spinner" />
+
+    <Spinner
+        android:id="@+id/minute_spinner"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/separator_label1"
+        app:layout_constraintTop_toTopOf="@+id/separator_label1" />
+
+    <TextView
+        android:id="@+id/set_label"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/t_setTempLabel"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_label" />
+
+    <Spinner
+        android:id="@+id/temp_spinner"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/set_label"
+        app:layout_constraintTop_toTopOf="@+id/set_label" />
+
+    <TextView
+        android:id="@+id/degrees_label"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/t_degreesLabel"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintStart_toEndOf="@+id/temp_spinner"
+        app:layout_constraintTop_toTopOf="@+id/temp_spinner" />
+
+    <TextView
+        android:id="@+id/set_manually_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/t_manualEntryLabelText"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_label" />
+
+    <EditText
+        android:id="@+id/manual_text_entry"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/t_manualEntryHintText"
+        android:imeOptions="actionDone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_manually_label" />
+
+    <TextView
+        android:id="@+id/manual_text_entry_format_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/t_manualEntryFormatLabelText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manual_text_entry" />
+
+    <Button
+        android:id="@+id/t_discardEditChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="@string/t_discardEditChangesButtonText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manual_text_entry_format_hint" />
+
+    <Button
+        android:id="@+id/t_saveEditChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="@string/t_saveEditChangesButtonText"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manual_text_entry_format_hint" />
+
+    <Button
+        android:id="@+id/t_saveNewRuleEditChangesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/t_saveNewRuleEditChangesButtonText"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/t_saveEditChangesButton"
+        app:layout_constraintStart_toEndOf="@+id/t_discardEditChangesButton"
+        app:layout_constraintTop_toBottomOf="@+id/manual_text_entry_format_hint" />
+
+
+</android.support.constraint.ConstraintLayout>

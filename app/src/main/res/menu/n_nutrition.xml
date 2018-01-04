@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_thermostat"
+        android:icon="@drawable/icons8_temperature_inside_50"
+        android:orderInCategory="200"
+        android:title="@string/m_menu_thermostat"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_exercise"
+        android:icon="@drawable/icons8_running_50"
+        android:orderInCategory="150"
+        android:title="@string/m_menu_exercise"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_car"
+        android:icon="@drawable/icons8_gas_station_50"
+        android:orderInCategory="250"
+        android:title="@string/m_menu_automobile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/icons8_home_filled_50"
+        android:orderInCategory="250"
+        android:title="@string/c_home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/icons8_help_50"
+        android:orderInCategory="300"
+        android:title="@string/c_help"
+        app:showAsAction="never" />
+</menu>

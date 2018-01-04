@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Car Activity -->
+    <style name="c_DetailsEditText">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="c_DetailsLabels">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="c_Title">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="c_ActionIcon">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="c_ToolbarIcon">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <!-- Table styles -->
+
+    <style name="c_HeadingBlue">
+        <item name="android:background">@color/c_headingBlue</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="c_HeadingCell">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="c_PriceCell" parent="c_HeadingCell">
+        <item name="android:layout_width">105dp</item>
+        <item name="android:padding">7dp</item>
+    </style>
+
+    <style name="c_LitresCell" parent="c_HeadingCell">
+        <item name="android:layout_width">105dp</item>
+    </style>
+
+    <style name="c_KilometersCell" parent="c_HeadingCell">
+        <item name="android:layout_width">150dp</item>
+    </style>
+
+    <style name="c_DateCell" parent="c_HeadingCell">
+        <item name="android:layout_width">160dp</item>
+    </style>
+
+    <!-- Fuel Statistics -->
+    <style name="c_StatCell">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_gravity">fill</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="c_StatLabel" parent="c_StatCell">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="c_StatData" parent="c_StatCell">
+        <item name="android:layout_width">200dp</item>
+    </style>
+
+</resources>

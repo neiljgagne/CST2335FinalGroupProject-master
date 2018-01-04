@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.joe.cst2335finalgroupproject.c_FuelStatisticsActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:text="@string/c_lastMonthStats"
+            android:layout_columnSpan="2"
+            android:textStyle="bold"
+            style="@style/c_StatData"
+            android:background="@color/c_headingBlue"/>
+        <TextView
+            android:text="@string/c_PriceLastMonth"
+            style="@style/c_StatLabel"
+            android:background="@color/c_rowWhite"/>
+
+        <TextView
+            android:id="@+id/tvPrevMonthAvgGasPrice"
+            style="@style/c_StatData"
+            android:background="@color/c_rowWhite"/>
+
+        <TextView
+            android:text="@string/c_PurchasedLastMonth"
+            style="@style/c_StatLabel"
+            android:background="@color/c_rowBlue"/>
+
+        <TextView
+            android:id="@+id/tvPrevMonthTotalGas"
+            style="@style/c_StatData"
+            android:background="@color/c_rowBlue"/>
+    </GridLayout>
+
+    <TextView
+        android:text="@string/c_avgGasPurchHist"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        style="@style/c_StatData"
+        android:background="@color/c_headingBlue"/>
+
+    <TextView
+        android:id="@+id/c_tvNoHistory"
+        android:text="@string/c_avgGasPurchHistNone"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/c_rowWhite"
+        android:visibility="gone"/>
+
+    <ListView
+        android:layout_marginBottom="10dp"
+        android:id="@+id/lvFuelStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

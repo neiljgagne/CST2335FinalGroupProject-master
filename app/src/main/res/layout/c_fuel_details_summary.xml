@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    android:rowCount="1">
+
+    <TableRow
+        android:id="@+id/fuelDetailRow">
+
+        <TextView
+            android:id="@+id/tvPrice"
+            style="@style/c_PriceCell"/>
+
+        <TextView
+            android:id="@+id/tvLitres"
+            style="@style/c_LitresCell"/>
+
+        <TextView
+            android:id="@+id/tvKilometers"
+            style="@style/c_KilometersCell" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/c_DateCell" />
+
+        <RelativeLayout
+            android:id="@+id/btnDeleteFuelDetails"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <ImageView
+                android:src="@drawable/icons8_minus_50"
+                android:layout_centerInParent="true"
+                style="@style/c_ActionIcon" />
+
+        </RelativeLayout>
+
+
+    </TableRow>
+
+</TableLayout>

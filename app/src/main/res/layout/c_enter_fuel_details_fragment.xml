@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="6"
+    android:layout_marginTop="65dp"
+    android:background="@color/c_rowWhite"
+    tools:context="com.example.joe.cst2335finalgroupproject.c_AddFuelDetailsActivity">
+
+    <TextView
+        android:id="@+id/enterFuelDetailsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:gravity="fill"
+        android:padding="10dp"
+        android:background="@color/c_headingBlue"
+        style="@style/c_Title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_vertical"
+        android:text="@string/c_LblPrice"
+        style="@style/c_DetailsLabels"/>
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        style="@style/c_DetailsEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_vertical"
+        android:text="@string/c_LblLitres"
+        style="@style/c_DetailsLabels"/>
+
+    <EditText
+        android:id="@+id/etLitres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        style="@style/c_DetailsEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_vertical"
+        android:text="@string/c_LblKilometers"
+        style="@style/c_DetailsLabels"/>
+
+    <EditText
+        android:id="@+id/etKilometers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        style="@style/c_DetailsEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center_vertical"
+        android:text="@string/c_LblDate"
+        style="@style/c_DetailsLabels"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="none"
+        android:maxLength="10"
+        style="@style/c_DetailsEditText" />
+
+    <Button
+        android:id="@+id/btnEnterDetailsCancel"
+        android:text="@string/c_Cancel"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnEnterDetailsSubmit"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"/>
+</GridLayout>

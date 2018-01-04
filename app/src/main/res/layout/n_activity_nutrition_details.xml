@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_toolbarGrey"
+    tools:background="@color/c_toolbarGrey"
+    tools:context="com.example.joe.cst2335finalgroupproject.n_NutritionTrackerActivity">
+
+    <TextView
+        android:id="@+id/nutrition_detail_name_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="12dp"
+        android:text="@string/n_FoodNameOrDesc"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/nutrition_detail_name_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_detail_name_header"
+        android:textSize="12dp"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/nutrition_detail_calories_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_detail_name_value"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/n_Calories"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/nutrition_detail_calories_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_below="@+id/nutrition_detail_calories_header"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/nutrition_detail_carbs_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_detail_calories_value"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/n_Carbs"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/nutrition_detail_carbs_value"
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_detail_carbs_header"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/nutrition_detail_fat_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_detail_carbs_value"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/n_Fat"
+        android:textSize="16dp" />
+
+    <TextView
+        android:textSize="12dp"
+        android:id="@+id/nutrition_detail_fat_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_detail_fat_header"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/nutrition_detail_comment_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_detail_fat_value"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/n_Comments"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/nutrition_detail_comment_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nutrition_detail_comment_header"
+        android:textSize="12dp"
+        android:layout_marginLeft="12dp" />
+
+    <Button
+        android:id="@+id/nutrition_detail_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/nutrition_detail_comment_value"
+
+        android:paddingBottom="8dp"
+        android:text="@string/n_Edit" />
+
+    <Button
+        android:id="@+id/nutrition_detail_cancel"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutrition_detail_comment_value"
+        android:layout_marginTop="12dp"
+        android:paddingBottom="8dp"
+        android:text="@string/n_Close" />
+
+    <Button
+        android:id="@+id/nutrition_detail_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nutrition_detail_comment_value"
+
+        android:layout_alignParentRight="true"
+        android:paddingBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/n_Delete" />
+
+</RelativeLayout>

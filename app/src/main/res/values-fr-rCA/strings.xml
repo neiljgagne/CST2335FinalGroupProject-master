@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m_app_name">CST2335 Final Project</string>
+    <string name="a_main_toastText">" Activité ajoutée avec succès"</string>
+    <string name="a_main_snackbarText">Message supprimé</string>
+    <string name="a_main_addButton">Ajouter</string>
+    <string name="a_details_cancelButton">Annuler</string>
+    <string name="a_details_deleteButton">Effacer</string>
+    <string name="a_details_confirmButton">Confirmer</string>
+    <string name="a_details_Comments">"Commentaires: "</string>
+    <string name="a_details_Duration">Durée</string>
+    <string name="a_details_activityType">Activité</string>
+    <string name="a_main_statsButton">Statistiques mensuelles</string>
+    <string name="a_alert_statsString">Activité mensuelle moyenne: %1$f Total ce mois-ci: %2$f</string>
+    <string name="a_alert_title">Statistiques</string>
+    <string name="a_help_title">Aide a l\'activité</string>
+    <string name="a_ok">OK</string>
+</resources>

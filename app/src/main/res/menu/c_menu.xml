@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_exercise"
+        android:title="@string/m_menu_exercise"
+        android:icon="@drawable/icons8_running_50"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_food"
+        android:title="@string/m_menu_food"
+        android:icon="@drawable/icons8_vegetarian_food_50"
+        android:orderInCategory="150"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_thermostat"
+        android:title="@string/m_menu_thermostat"
+        android:icon="@drawable/icons8_temperature_inside_50"
+        android:orderInCategory="200"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="@string/c_home"
+        android:icon="@drawable/icons8_home_filled_50"
+        android:orderInCategory="250"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_help"
+        android:title="@string/c_help"
+        android:icon="@drawable/icons8_help_50"
+        android:orderInCategory="300"
+        app:showAsAction="never"/>
+
+</menu>
